@@ -31,11 +31,11 @@ class Client(db.Model):
 
 @app.route('/')
 def home():
-    return render_template("home.html")
+    return render_template("pages/home.html")
 
 @app.route('/connection')
 def connection_client():
-	return	render_template("connection.html")
+	return	render_template("pages/connection.html")
 
 if __name__ == "__main__":
 	db.create_all()
