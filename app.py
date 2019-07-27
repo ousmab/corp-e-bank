@@ -37,6 +37,11 @@ def home():
 def connection_client():
 	return	render_template("pages/connection.html")
 
+@app.route('/myaccount')
+def account():
+	return render_template("pages/account/dashboard.html")
+
+
 if __name__ == "__main__":
 	db.create_all()
 	app.run(debug=True,port=8000,host="0.0.0.0")
