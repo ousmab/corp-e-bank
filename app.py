@@ -39,7 +39,30 @@ def connection_client():
 
 @app.route('/myaccount')
 def account():
+
+	# on verifie les conbinaison login et mot de passe
+	# si cest bon on redirige ver son compte
+	# si c'est pas bon on renvoi vers la page de connection avec une erreur 
+
 	return render_template("pages/account/dashboard.html")
+
+
+# LE CLIENT DOIT ETRE CONNECTE POUR ACCEDER A CES ROUTES
+@app.route('/myaccount/profil')
+def profil():
+	return render_template('pages/account/profil.html')
+
+
+@app.route('/myaccount/statement')
+def historique():
+	return render_template('pages/account/historique.html')
+
+
+
+
+@app.route('/myaccount/notification')
+def notification():
+	return render_template('pages/account/notification.html')
 
 
 if __name__ == "__main__":

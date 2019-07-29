@@ -1,0 +1,17 @@
+[
+    {
+        "adresse": "BP:456 DOUALA",
+        "date_creation": "27/07/2019",
+        "date_naissance": "10/10/1999",
+        "email": "aboousmane@gmail.com",
+        "id": 1,
+        "login": "aboousmane@&gmail.com",
+        "mot_de_passe": "mercibien",
+        "nom": "aboubakar",
+        "numero_compte": "1210154021234567891236",
+        "prenom": "ousmane\n",
+        "sexe": 1,
+        "solde_compte": 0,
+        "telephone": "699044427"
+    }
+]
